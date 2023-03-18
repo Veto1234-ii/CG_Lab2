@@ -1,0 +1,17 @@
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.AssemblyReference.cache
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.Form1.resources
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.Properties.Resources.resources
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.GenerateResource.cache
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.CoreCompileInputs.cache
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\Tomogram_visualizer.exe.config
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\Tomogram_visualizer.exe
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\Tomogram_visualizer.pdb
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.dll
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.GLControl.dll
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.pdb
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.xml
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.GLControl.pdb
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.GLControl.xml
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.CopyComplete
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.exe
+D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.pdb
