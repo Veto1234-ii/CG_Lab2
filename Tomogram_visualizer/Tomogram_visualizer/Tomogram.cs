@@ -43,6 +43,7 @@ namespace Tomogram_visualizer
           array[i] = reader.ReadInt16();
         }
 
+        
       }
     }
   }

@@ -15,3 +15,21 @@ D:\4 семестр\Компьютерная графика\Практика\tom
 D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.CopyComplete
 D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.exe
 D:\4 семестр\Компьютерная графика\Практика\tomogram_visualizer\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.pdb
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\Tomogram_visualizer.exe.config
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\Tomogram_visualizer.exe
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\Tomogram_visualizer.pdb
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.dll
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.GLControl.dll
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.pdb
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.xml
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\bin\Debug\OpenTK.GLControl.xml
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.AssemblyReference.cache
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.Form1.resources
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.Properties.Resources.resources
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.GenerateResource.cache
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.CoreCompileInputs.cache
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.CopyComplete
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.exe
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.pdb
+C:\Users\kurdi\Desktop\CG_Lab2\Tomogram_visualizer\Tomogram_visualizer\obj\Debug\Tomogram_visualizer.csproj.SuggestedBindingRedirects.cache
