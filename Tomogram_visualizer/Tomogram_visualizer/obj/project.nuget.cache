@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "Znejr1UrlRBRZzA1WoCt/dctWtqJhUhwV3hTIRDodVaxWzFjgROS8rf5HRIRV9mPumV/s8mz/drRuxRO2PESWA==",
+  "success": true,
+  "projectFilePath": "D:\\4 semester\\Компьютерная графика\\Практика\\L2\\Tomogram_visualizer\\Tomogram_visualizer\\Tomogram_visualizer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk\\4.7.1\\opentk.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.compute\\4.7.1\\opentk.compute.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.core\\4.7.1\\opentk.core.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.graphics\\4.7.1\\opentk.graphics.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.input\\4.7.1\\opentk.input.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.mathematics\\4.7.1\\opentk.mathematics.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.openal\\4.7.1\\opentk.openal.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.redist.glfw\\3.3.0-pre20200830200122\\opentk.redist.glfw.3.3.0-pre20200830200122.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.windowing.common\\4.7.1\\opentk.windowing.common.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.windowing.desktop\\4.7.1\\opentk.windowing.desktop.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.windowing.graphicslibraryframework\\4.7.1\\opentk.windowing.graphicslibraryframework.4.7.1.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\opentk.winforms\\4.0.0-pre.6\\opentk.winforms.4.0.0-pre.6.nupkg.sha512",
+    "C:\\Users\\Екатерина\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
