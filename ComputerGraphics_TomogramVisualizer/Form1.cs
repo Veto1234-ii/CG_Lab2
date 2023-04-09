@@ -9,14 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace TomogramVisualizer
 {
   public partial class Form1 : Form
   {
-    //создаем и инициализируем объект
+    //Г±Г®Г§Г¤Г ГҐГ¬ ГЁ ГЁГ­ГЁГ¶ГЁГ Г«ГЁГ§ГЁГ°ГіГҐГ¬ Г®ГЎГєГҐГЄГІ
     //Bin bin;
 
-    // чтобы не запускать отрисовку пока не загружены данные
+
+    // Г·ГІГ®ГЎГ» Г­ГҐ Г§Г ГЇГіГ±ГЄГ ГІГј Г®ГІГ°ГЁГ±Г®ГўГЄГі ГЇГ®ГЄГ  Г­ГҐ Г§Г ГЈГ°ГіГ¦ГҐГ­Г» Г¤Г Г­Г­Г»ГҐ
     bool loaded = false;
 
     int currentLayer = 0;
@@ -29,7 +31,7 @@ namespace TomogramVisualizer
       InitializeComponent();
     }
 
-    private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
+    private void Г®ГІГЄГ°Г»ГІГјToolStripMenuItem_Click(object sender, EventArgs e)
     {
 
       OpenFileDialog dialog = new OpenFileDialog();
@@ -45,18 +47,42 @@ namespace TomogramVisualizer
 
         View.SetupView(glControl1.Width, glControl1.Height);
 
+
+    // Г·ГІГ®ГЎГ» Г­ГҐ Г§Г ГЇГіГ±ГЄГ ГІГј Г®ГІГ°ГЁГ±Г®ГўГЄГі ГЇГ®ГЄГ  Г­ГҐ Г§Г ГЈГ°ГіГ¦ГҐГ­Г» Г¤Г Г­Г­Г»ГҐ
+    bool loaded = false;
+
+    int currentLayer = 0;
+    bool needReload = false;
+    public Form1()
+    {
+      InitializeComponent();
+    }
+
+    private void Г®ГІГЄГ°Г»ГІГјToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+      OpenFileDialog dialog = new OpenFileDialog();
+
+      if (dialog.ShowDialog() == DialogResult.OK)
+      {
+        string str = dialog.FileName;
+
+
         loaded = true;
 
+
         glControl1.Invalidate();
+
 
         trackBar1.Maximum = Bin.Z - 1;
       }
     }
 
+
     private void glControl1_Paint(object sender, PaintEventArgs e)
     {
-            // для текстуры: рисует томограмму с помощью текстуры,
-            // загружает текстуру только когда переменная needReload true
+            // Г¤Г«Гї ГІГҐГЄГ±ГІГіГ°Г»: Г°ГЁГ±ГіГҐГІ ГІГ®Г¬Г®ГЈГ°Г Г¬Г¬Гі Г± ГЇГ®Г¬Г®Г№ГјГѕ ГІГҐГЄГ±ГІГіГ°Г»,
+            // Г§Г ГЈГ°ГіГ¦Г ГҐГІ ГІГҐГЄГ±ГІГіГ°Гі ГІГ®Г«ГјГЄГ® ГЄГ®ГЈГ¤Г  ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г Гї needReload true
 
             if (loaded)
             {
@@ -105,7 +131,13 @@ namespace TomogramVisualizer
                 glControl1.Invalidate();
 
             }
+
         }
+        View.DrawTexture();
+        glControl1.SwapBuffers();
+      }
+    }
+
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
@@ -139,18 +171,23 @@ namespace TomogramVisualizer
                 displayFPS();
                 glControl1.Invalidate();
             }
-        } // для запуска FPS
+        } // Г¤Г«Гї Г§Г ГЇГіГ±ГЄГ  FPS
 
         private void displayFPS()
         {
             if (DateTime.Now >= NextFPSUpdate)
             {
-                this.Text = String.Format("CG_Lab2: Томография ( FPS {0} )", FrameCount);
+                this.Text = String.Format("CG_Lab2: Г’Г®Г¬Г®ГЈГ°Г ГґГЁГї ( FPS {0} )", FrameCount);
                 NextFPSUpdate = DateTime.Now.AddSeconds(1);
                 FrameCount = 0;
             }
             FrameCount++;
         }
         */
+
     }
+
+    
+
+  }
 }

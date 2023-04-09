@@ -20,7 +20,6 @@ namespace TomogramVisualizer
 
     public static short[] array;
 
-    
 
     public static void readBIN(string path)
     {
@@ -71,6 +70,7 @@ namespace TomogramVisualizer
     static int VBOtexture; //хранит номер текстуры в памяти видеокарты
     static Bitmap textureImage;
 
+
     public static int min = 0;
     public static int width = 255;
 
@@ -89,6 +89,7 @@ namespace TomogramVisualizer
       int max = min + width;
       
       int newVal = Math.Clamp((value - min) * 255 / (max - min), 0, 255);
+
 
       return Color.FromArgb(newVal, newVal, newVal);
     }
@@ -118,6 +119,7 @@ namespace TomogramVisualizer
 
     public static void Load2DTexture()
     {
+
       // связывает текстуру, делает ее активной, указывает ее тип
       GL.BindTexture(TextureTarget.Texture2D, VBOtexture);
 
@@ -138,6 +140,7 @@ namespace TomogramVisualizer
     }
 
     // генерирует изображение из томограммы при помощи созданной Transfer Function
+
     public static void generateTextureImage(int layerNumber)
     {
       textureImage = new Bitmap(Bin.X, Bin.Y);
@@ -150,7 +153,9 @@ namespace TomogramVisualizer
         }
       }
     }
+
     // включает 2d - текстурирование,выбирает текстуру и рисует один прямоугольник с наложенной текстурой, выключает 2d - текстурирование 
+
     public static void DrawTexture()
     {
       GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
