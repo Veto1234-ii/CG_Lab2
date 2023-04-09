@@ -20,6 +20,7 @@ namespace TomogramVisualizer
 
     public static short[] array;
 
+
     public static void readBIN(string path)
     {
 
@@ -69,19 +70,27 @@ namespace TomogramVisualizer
     static int VBOtexture; //хранит номер текстуры в памяти видеокарты
     static Bitmap textureImage;
 
-    public static void SetupView(int width, int height)
-    {
-      GL.ShadeModel(ShadingModel.Smooth);
-      GL.MatrixMode(MatrixMode.Projection);
-      GL.LoadIdentity();
-      GL.Ortho(0, Bin.X, 0, Bin.Y, -1, 1);
-      GL.Viewport(0, 0, width, height);
-    }
+
+    public static int min = 0;
+    public static int width = 255;
+
+        public static void SetupView(int width, int height)
+        {
+            GL.ShadeModel(ShadingModel.Smooth);
+            GL.MatrixMode(MatrixMode.Projection);
+            GL.LoadIdentity();
+            GL.Ortho(0, Bin.X, 0, Bin.Y, -1, 1);
+            GL.Viewport(0, 0, width, height);
+        }
     public static Color TransferFunction(short value)
     {
-      int min = 0;
-      int max = 255;
+
+      
+      int max = min + width;
+      
       int newVal = Math.Clamp((value - min) * 255 / (max - min), 0, 255);
+
+
       return Color.FromArgb(newVal, newVal, newVal);
     }
     public static void DrawQuads(int layerNumber)
@@ -110,15 +119,27 @@ namespace TomogramVisualizer
 
     public static void Load2DTexture()
     {
+
+      // связывает текстуру, делает ее активной, указывает ее тип
       GL.BindTexture(TextureTarget.Texture2D, VBOtexture);
+
       BitmapData data = textureImage.LockBits(new System.Drawing.Rectangle(0, 0, textureImage.Width, textureImage.Height), ImageLockMode.ReadOnly, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+      // загружает текстуру в память видеокарты
       GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, data.Width, data.Height, 0, OpenTK.Graphics.OpenGL.PixelFormat.Bgra, PixelType.UnsignedByte, data.Scan0);
+
       textureImage.UnlockBits(data);
+
       GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMinFilter, (int)TextureMinFilter.Linear);
+      
       GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMagFilter, (int)TextureMagFilter.Linear);
+      
       ErrorCode Er = GL.GetError();
+      
       string str = Er.ToString();
     }
+
+    // генерирует изображение из томограммы при помощи созданной Transfer Function
 
     public static void generateTextureImage(int layerNumber)
     {
@@ -133,6 +154,8 @@ namespace TomogramVisualizer
       }
     }
 
+    // включает 2d - текстурирование,выбирает текстуру и рисует один прямоугольник с наложенной текстурой, выключает 2d - текстурирование 
+
     public static void DrawTexture()
     {
       GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
@@ -140,6 +163,7 @@ namespace TomogramVisualizer
       GL.BindTexture(TextureTarget.Texture2D, VBOtexture);
 
       GL.Begin(BeginMode.Quads);
+
       GL.Color3(Color.White);
       GL.TexCoord2(0f,0f);
       GL.Vertex2(0,0);
@@ -149,6 +173,7 @@ namespace TomogramVisualizer
       GL.Vertex2(Bin.X,Bin.Y);
       GL.TexCoord2(1f, 0f);
       GL.Vertex2(Bin.X, 0);
+
       GL.End();
 
       GL.Disable(EnableCap.Texture2D);
